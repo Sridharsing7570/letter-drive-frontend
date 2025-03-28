@@ -12,8 +12,6 @@ export function AuthProvider({ children }) {
     const [loading, setLoading] = useState(true);
     const API_URL = import.meta.env.VITE_API_URL;
 
-    console.log("api url", API_URL);
-
     useEffect(() => {
         const checkUser = async () => {
             try {
